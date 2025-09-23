@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercise2Slot3</string>
+    <string name="app_title">My Note Board</string>
+    <string name="note_hint">Enter note</string>
+</resources>
