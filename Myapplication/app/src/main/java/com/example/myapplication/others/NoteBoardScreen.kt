@@ -80,7 +80,6 @@ fun NoteBoardContent(
                         NoteItem(
                             note = note,
                             onLongPress = {
-                                // 🔹 Giả lập bắt đầu kéo
                                 isDragging = true
                                 onToggleSelect(note)
                             },
@@ -93,7 +92,7 @@ fun NoteBoardContent(
                                         actionLabel = "Undo"
                                     )
                                     if (result == SnackbarResult.ActionPerformed) {
-                                        // gọi undo ở ViewModel nếu cần
+                                        // undo ở ViewModel
                                     }
                                 }
                             }
@@ -102,19 +101,18 @@ fun NoteBoardContent(
                 }
             }
 
-            // ======= Trash Bin icon =======
+            // ======= Trash Bin icon (trái dưới) =======
             Icon(
                 imageVector = Icons.Default.Delete,
                 contentDescription = "Trash Bin",
                 tint = MaterialTheme.colorScheme.error,
                 modifier = Modifier
-                    .align(Alignment.BottomStart)
+                    .align(Alignment.BottomStart) // góc trái dưới
                     .padding(16.dp)
                     .size(56.dp)
                     .background(Color.LightGray, CircleShape)
                     .padding(16.dp)
             )
-
 
             // ======= Overlay mờ khi đang kéo =======
             if (isDragging) {
@@ -125,6 +123,7 @@ fun NoteBoardContent(
                 )
             }
         }
+
     }
 }
 
