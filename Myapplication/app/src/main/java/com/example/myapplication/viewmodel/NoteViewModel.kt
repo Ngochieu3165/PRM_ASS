@@ -2,7 +2,7 @@ package com.example.myapplication.viewmodel
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import com.example.myapplication.model.Note
-
+//
 class NoteViewModel : ViewModel() {
     private val _notes = mutableStateListOf<Note>()
     val notes: List<Note> get() = _notes
