@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import com.example.myapplication.viewmodel.NoteViewModel
 import com.example.myapplication.others.NoteBoardScreen
-//
+
 
 class MainActivity : ComponentActivity() {
     private val vm: NoteViewModel by viewModels()
